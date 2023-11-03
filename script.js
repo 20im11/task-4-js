@@ -93,7 +93,7 @@ arrayFruits.unshift("საზამთრო");
 console.log(arrayFruits.length);
 arrayFruits.splice(2, 0, "მანგო");
 arrayFruits.splice(0, 1);
-arrayFruits.splice(-1, 1);
+arrayFruits.pop();
 console.log(arrayFruits.length);
 
 // task 11
