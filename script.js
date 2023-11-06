@@ -61,6 +61,7 @@ if (usersAnswer === expAnswer) {
 // task 7
 
 let link = "https://google.com";
+let funcForLink = (linkFunc) => link.includes("https://");
 if (link.includes("https://")) {
   console.log("კი,მოიცავს");
 } else {
@@ -124,11 +125,11 @@ console.log(languageFilter);
 // task 15
 
 let words = ["Madrid", "Rome", "Milan", "Berlin"];
-let resultWords = words.filter((citys) => citys.includes("m"));
-let resultWords2 = words.filter((citys2) => citys2.includes("M"));
-let finalResultCitys = resultWords.concat(resultWords2);
+let resultWords = words.filter(
+  (citys) => citys.includes("m") || citys.includes("M")
+);
+let finalResultCitys = resultWords;
 console.log(finalResultCitys);
-// ამ დავალებაში,როდესაც გამოვიყენე || ნიშანი "ან"-ისთვის,შესაბამისი შედეგი ვერ მივიღე
 
 // task 16
 
